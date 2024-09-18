@@ -10,7 +10,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'ChatFAST',
-  description: 'Chat with AI about SDA non-trinitarian beliefs.',
+  description:
+    'Chat with AI about SDA non-trinitarian history, beliefs, and theology.',
 }
 
 interface Props {
