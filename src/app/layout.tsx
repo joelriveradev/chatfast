@@ -24,7 +24,11 @@ export default function RootLayout({ children }: Props) {
       <body className={cn(inter.className, 'w-full min-h-dvh')}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <Header />
-          {children}
+
+          <div className='w-full flex items-start relative'>
+            <aside className='hidden group absolute w-[300px] h-[calc(100dvh-40px)] bottom-0 left-0 z-30 lg:block'></aside>
+            <div className='flex-1'>{children}</div>
+          </div>
         </ThemeProvider>
       </body>
     </html>
